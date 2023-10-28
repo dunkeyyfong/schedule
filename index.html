@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            margin-right: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: purple;
+        }
+
+        .schedule {
+            padding: 20px;
+        }
+
+        .day {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .day h2 {
+            margin-top: 0;
+        }
+
+        .event {
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 750px) {
+            .day {
+                margin-bottom: 15px;
+            }
+
+            .day h2 {
+                font-size: 18px;
+            }
+
+            .event {
+                font-size: 14px;
+            }
+
+            img {
+                width: 100%;
+                height: 100px;
+                margin-right: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Schedule</h1>
+    </div>
+
+    <div class="content">
+        <div class="content-label">
+            <p>
+                Location: Place d'Armes, Versailles, France
+                Program Name: Event Mobile Developer Training
+                Date: November 11 - November 14, 2023
+            </p>
+        </div>
+        <div class="name-company">
+            <h2>TTHP Company</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="./img/img1.jpeg" alt="img">
+        <img src="./img/img2.jpeg" alt="img">
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#day1">Day 1</a></li>
+            <li><a href="#day2">Day 2</a></li>
+            <li><a href="#day3">Day 3</a></li>
+            <li><a href="#day4">Day 4</a></li>
+        </ul>
+    </div>
+
+    <div class="schedule">
+        <div id="day1" class="day">
+            <h2>Day 1: November 11, 2023</h2>
+            <p class="event">2:30PM - 3:00PM: Gather at Noi Bai Airport and take everyone's roll call</p>
+            <p class="event">3:30PM - 6:30PM: Fly to France</p>
+            <p class="event">6:30PM - 8:30PM: Check-in hotel and dinner</p>
+        </div>
+
+        <div id="day2" class="day">
+            <h2>Day 2: November 12, 2023</h2>
+            <p class="event">08:00 AM - 09:00 AM: Registration and Welcome Breakfast</p>
+            <p class="event">09:00 AM - 09:30 AM: Opening Ceremony and Welcome Address</p>
+            <p class="event">11:30 AM - 12:30 PM: Networking and Coffee Break</p>
+            <p class="event">12:30 PM - 02:00 PM: Parallel Workshops:
+                - Workshop 1: "Mobile App Design Principles"
+                - Workshop 2: "Latest Trends in App Development"</p>
+            <p class="event">02:00 PM - 03:30 PM: Lunch</p>
+            <p class="event">03:30 PM - 05:00 PM: Panel Discussion: "Challenges in Mobile App Development"</p>
+            <p class="event">05:00 PM - 06:00 PM: Evening Reception and Networking</p>
+        </div>
+
+        <div id="day3" class="day">
+            <h2>Day 3: November 13, 2023</h2>
+            <p class="event">08:30 AM - 10:30 AM: Technical Session: "iOS App Development"</p>
+            <p class="event">10:30 AM - 11:30 AM: Coffee Break and Networking</p>
+            <p class="event">11:30 AM - 01:00 PM: Technical Session: "Android App Development"</p>
+            <p class="event">01:00 PM - 02:00 PM: Lunch</p>
+            <p class="event">02:00 PM - 03:30 PM: Workshop 3: "Cross-Platform App Development"</p>
+            <p class="event">03:30 PM - 05:00 PM: Workshop 4: "User Experience (UX) Design for Apps"</p>
+            <p class="event">05:00 PM - 06:00 PM: Q&A Session with Experts</p>
+        </div>
+
+        <div id="day4" class="day">
+            <h2>Day 4: November 14, 2023</h2>
+            <p class="event">09:00 AM - 10:30 AM: Workshop 6: "Building a Mobile App Prototype"</p>
+            <p class="event">10:30 AM - 11:30 AM: Coffee Break and Networking</p>
+            <p class="event">11:30 AM - 01:00 PM: Presentation of Participant Projects</p>
+            <p class="event">01:00 PM - 02:00 PM: Lunch</p>
+            <p class="event">02:00 PM - 03:30 PM: Closing Ceremony and Certificate Distribution</p>
+            <p class="event">03:30 PM - 04:30 PM: Go to Airport and fly to Viet Nam</p>
+        </div>
+    </div>
+</body>
+
+</html>
